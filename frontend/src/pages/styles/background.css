@@ -1,0 +1,43 @@
+.background {
+    margin: 0;
+    background-color: #836040; 
+    background-image: url('../img/21495484511.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  body {
+    background-color: #c8c8c8; 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .background {
+      background-image: url('../img/21495484511.jpg'); 
+      background-color: #836040; /* Utiliser une couleur de fond de substitution */
+      height: 100%; /* Utiliser la hauteur de l'écran pour couvrir la zone visible */
+      position: absolute; /* Changer la position en relative pour le défilement */
+      z-index: -1; /* Rétablir l'ordre de superposition */
+      margin-top: 50px;
+      background-size: cover; 
+      background-position: center;
+
+
+    }
+  
+    body {
+      background-color: #c2b5a8; 
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

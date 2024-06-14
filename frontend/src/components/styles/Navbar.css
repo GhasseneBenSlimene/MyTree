@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(232, 232, 232);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  padding-right: 200px;
+}
+
+.logo {
+  font-size: 32px; 
+  color: rgb(155, 40, 80);
+  /* text-shadow: 0px 0px 8px rgba(129, 34, 68, 0.8); */
+}
+
+.nav-links {
+  font-size: 24px;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-link {
+  color: rgb(109, 109, 109);
+  /* text-shadow: 0px 0px 8px rgba(74, 74, 74, 0.8); */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link:active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(109, 109, 109);
+  color: rgb(109, 109, 109);
+  position: relative;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link .logo:hover::after,
+.nav-link .logo:focus::after,
+.nav-link .logo:active::after {
+  content: none; /* Annuler le contenu des pseudo-éléments */
+  display: none; /* Masquer les pseudo-éléments */
+  /* Réinitialiser ou supprimer d'autres styles selon vos besoins */
+}
+
+.navContainer {
+  padding-bottom: 20px;
+}
+
+
+@media print {
+  .navbar {
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    padding-right: 12px; /* Réduire l'espace à droite du logo */
+    margin-left: 10px;
+  }
+
+  .logo {
+    font-size: 20px; /* Réduire la taille du logo */
+  }
+
+  .nav-links {
+    font-size: 16px; /* Réduire la taille des liens de navigation */
+    gap: 8px; /* Réduire l'espace entre les liens */
+  }
+}
+

@@ -1,0 +1,63 @@
+/* Styles pour le conteneur de texte */
+.text-container {
+  margin: 150px;
+  text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+  color: #ffffff;
+}
+
+/* Styles pour le titre */
+#title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles pour le sous-titre */
+#subtitle {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto; /* Centrer le sous-titre horizontalement */
+  text-align:center;
+  padding-bottom: 100px;
+}
+
+/* Styles pour le bouton de démarrage */
+#start-button {
+  font-weight: bold;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.3); /* Fond blanc avec une opacité de 70% */
+  border-color: #ffffff;
+  border-width: 2px; /* Réduire la largeur de la bordure */
+  color:#ffffff;
+  border-style: solid;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+#start-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .text-container {
+    margin: 50px; /* Réduire la marge */
+  }
+
+  #title {
+    font-size: 2.5rem; /* Réduire la taille du titre */
+  }
+
+  #subtitle {
+    width: 80%; /* Augmenter la largeur du sous-titre */
+    font-size: 1.2rem; /* Réduire la taille du sous-titre */
+    padding-bottom: 50px; /* Réduire l'espacement en bas */
+  }
+
+  #start-button {
+    font-size: 1.5rem; /* Réduire la taille du bouton */
+    padding: 10px 20px; /* Réduire le rembourrage du bouton */
+  }
+}

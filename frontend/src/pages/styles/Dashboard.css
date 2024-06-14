@@ -1,0 +1,30 @@
+.dashboard-container {
+  background-color: #a3907d;
+  padding: 100px;
+  padding-top: 0px;
+}
+
+.tree {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tree ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.tree ul li {
+  margin-bottom: 10px;
+}
+
+.tree ul li > div {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.tree ul ul {
+  margin-top: 10px;
+}
